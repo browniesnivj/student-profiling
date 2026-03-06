@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CCS Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+<h2>CCS Portal</h2>
+
+<ul>
+<li onclick="showPage('dashboard')" class="active">Dashboard</li>
+<li onclick="showPage('students')">Students</li>
+<li onclick="showPage('sports')">Sports</li>
+<li onclick="showPage('faculty')">Faculty</li>
+<li onclick="showPage('settings')">Settings</li>
+</ul>
+
+<div class="footer">
+PNC CCS System
+</div>
+
+</div>
+
+
+<!-- MAIN -->
+<div class="main">
+
+<div class="topbar">
+  <input type="text" placeholder="Search students...">
+
+  <div class="right-info">
+    <span id="datetime"></span>
+    <span class="admin">Admin</span>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="page">
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Students</h3>
+<p>1,240</p>
+</div>
+
+<div class="card">
+<h3>Total Faculty</h3>
+<p>35</p>
+</div>
+
+<div class="card">
+<h3>Sports Programs</h3>
+<p>12</p>
+</div>
+
+<div class="card">
+<h3>College</h3>
+<p>College of Computer Studies</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- STUDENTS -->
+<div id="students" class="page">
+
+<div class="table-box">
+
+<h2>Student Profiling</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Student Number</th>
+<th>Name</th>
+<th>Year</th>
+<th>Program</th>
+<th>Gender</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>2023001</td>
+<td>Juan Dela Cruz</td>
+<td>3</td>
+<td>BSIT</td>
+<td>Male</td>
+<td>Regular</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>2023002</td>
+<td>Maria Santos</td>
+<td>2</td>
+<td>BSCS</td>
+<td>Female</td>
+<td>Regular</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<!-- SPORTS -->
+<div id="sports" class="page">
+
+<div class="table-box">
+
+<h2>Sports Profiling</h2>
+
+<table>
+
+<tr>
+<th>Sport ID</th>
+<th>Sport Name</th>
+<th>Medical</th>
+<th>Height</th>
+<th>Weight</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Basketball</td>
+<td>None</td>
+<td>175</td>
+<td>70</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Volleyball</td>
+<td>Asthma</td>
+<td>168</td>
+<td>60</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<!-- FACULTY -->
+<div id="faculty" class="page">
+
+<div class="table-box">
+
+<h2>Faculty Data</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Masters Degree</th>
+<th>Expertise</th>
+<th>Gender</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Dr. Reyes</td>
+<td>MSc Computer Science</td>
+<td>Programming</td>
+<td>Male</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Prof. Cruz</td>
+<td>MSc IT</td>
+<td>Database</td>
+<td>Female</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<!-- SETTINGS -->
+<div id="settings" class="page">
+
+<h2>Settings</h2>
+<p>System settings will go here.</p>
+
+</div>
+
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
